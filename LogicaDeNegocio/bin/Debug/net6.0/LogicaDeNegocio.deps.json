@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "LogicaDeNegocio/1.0.0": {
+        "dependencies": {
+          "AccesoDato": "1.0.0"
+        },
+        "runtime": {
+          "LogicaDeNegocio.dll": {}
+        }
+      },
+      "AccesoDato/1.0.0": {
+        "runtime": {
+          "AccesoDato.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "LogicaDeNegocio/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "AccesoDato/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
