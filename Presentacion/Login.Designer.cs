@@ -111,6 +111,8 @@
             txtUser.Size = new Size(380, 33);
             txtUser.TabIndex = 1;
             txtUser.Text = "Usuario";
+            txtUser.Enter += txtUser_Enter;
+            txtUser.Leave += txtUser_Leave;
             // 
             // txtPass
             // 
@@ -120,6 +122,8 @@
             txtPass.Size = new Size(380, 33);
             txtPass.TabIndex = 2;
             txtPass.Text = "Contraseña";
+            txtPass.Enter += txtPass_Enter;
+            txtPass.Leave += txtPass_Leave;
             // 
             // btnLogin
             // 
@@ -130,6 +134,7 @@
             btnLogin.TabIndex = 3;
             btnLogin.Text = "ACCEDER";
             btnLogin.UseVisualStyleBackColor = true;
+            btnLogin.Click += btnLogin_Click;
             // 
             // label2
             // 
@@ -183,7 +188,7 @@
             linkLabel1.TabStop = true;
             linkLabel1.Text = "Ha olvidado la contrañena?";
             // 
-            // Form1
+            // Login
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -202,7 +207,7 @@
             Controls.Add(btnCerrar);
             Controls.Add(panel1);
             FormBorderStyle = FormBorderStyle.None;
-            Name = "Form1";
+            Name = "Login";
             Opacity = 0.9D;
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Form1";

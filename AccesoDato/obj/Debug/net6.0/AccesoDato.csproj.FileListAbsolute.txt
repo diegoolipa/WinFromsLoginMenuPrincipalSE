@@ -10,3 +10,15 @@ D:\proyecto_cs\LoginMenuPrincipal\AccesoDato\obj\Debug\net6.0\AccesoDato.dll
 D:\proyecto_cs\LoginMenuPrincipal\AccesoDato\obj\Debug\net6.0\refint\AccesoDato.dll
 D:\proyecto_cs\LoginMenuPrincipal\AccesoDato\obj\Debug\net6.0\AccesoDato.pdb
 D:\proyecto_cs\LoginMenuPrincipal\AccesoDato\obj\Debug\net6.0\ref\AccesoDato.dll
+D:\proyecto_cs_git\WinFromsLoginMenuPrincipalSE\AccesoDato\bin\Debug\net6.0\AccesoDato.deps.json
+D:\proyecto_cs_git\WinFromsLoginMenuPrincipalSE\AccesoDato\bin\Debug\net6.0\AccesoDato.dll
+D:\proyecto_cs_git\WinFromsLoginMenuPrincipalSE\AccesoDato\bin\Debug\net6.0\AccesoDato.pdb
+D:\proyecto_cs_git\WinFromsLoginMenuPrincipalSE\AccesoDato\obj\Debug\net6.0\AccesoDato.csproj.AssemblyReference.cache
+D:\proyecto_cs_git\WinFromsLoginMenuPrincipalSE\AccesoDato\obj\Debug\net6.0\AccesoDato.GeneratedMSBuildEditorConfig.editorconfig
+D:\proyecto_cs_git\WinFromsLoginMenuPrincipalSE\AccesoDato\obj\Debug\net6.0\AccesoDato.AssemblyInfoInputs.cache
+D:\proyecto_cs_git\WinFromsLoginMenuPrincipalSE\AccesoDato\obj\Debug\net6.0\AccesoDato.AssemblyInfo.cs
+D:\proyecto_cs_git\WinFromsLoginMenuPrincipalSE\AccesoDato\obj\Debug\net6.0\AccesoDato.csproj.CoreCompileInputs.cache
+D:\proyecto_cs_git\WinFromsLoginMenuPrincipalSE\AccesoDato\obj\Debug\net6.0\AccesoDato.dll
+D:\proyecto_cs_git\WinFromsLoginMenuPrincipalSE\AccesoDato\obj\Debug\net6.0\refint\AccesoDato.dll
+D:\proyecto_cs_git\WinFromsLoginMenuPrincipalSE\AccesoDato\obj\Debug\net6.0\AccesoDato.pdb
+D:\proyecto_cs_git\WinFromsLoginMenuPrincipalSE\AccesoDato\obj\Debug\net6.0\ref\AccesoDato.dll

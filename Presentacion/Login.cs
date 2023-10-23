@@ -1,4 +1,6 @@
+using LogicaDeNegocio;
 using System.Runtime.InteropServices;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
 namespace Presentacion
 {
@@ -41,6 +43,76 @@ namespace Presentacion
         {
             ReleaseCapture();
             SendMessage(this.Handle, 0x112, 0xf012, 0);
+        }
+
+        private void txtUser_Enter(object sender, EventArgs e)
+        {
+            if (txtUser.Text == "Usuario")
+            {
+                txtUser.Text = "";
+                txtUser.ForeColor = Color.Black;
+            }
+        }
+
+        private void txtUser_Leave(object sender, EventArgs e)
+        {
+            if (txtUser.Text == "")
+            {
+                txtUser.Text = "Usuario";
+                txtUser.ForeColor = Color.Black;
+            }
+        }
+
+        private void txtPass_Enter(object sender, EventArgs e)
+        {
+            if (txtPass.Text == "Contraseña")
+            {
+                txtPass.Text = "";
+                txtPass.ForeColor = Color.Black;
+            }
+        }
+
+        private void txtPass_Leave(object sender, EventArgs e)
+        {
+            if (txtPass.Text == "")
+            {
+                txtPass.Text = "Contraseña";
+                txtPass.ForeColor = Color.Black;
+            }
+        }
+
+        private void btnLogin_Click(object sender, EventArgs e)
+        {
+            if (txtUser.Text != "Usuario")
+            {
+                if (txtPass.Text != "Contraseña")
+                {
+                    UsuarioModel usuario = new UsuarioModel();
+                    var loginValido = usuario.LoginUsuario(txtUser.Text, txtPass.Text);
+                    if (loginValido == true)
+                    {
+                        MenuPrincipal menuPrincipal = new MenuPrincipal();
+                        //-----:MessageBox.Show("Bienbenido" + UsuarioLoginCache.Nombre);
+                        menuPrincipal.Show();
+                        //menuPrincipal.FormClosed += Logout;
+                        this.Hide();
+                    }
+                    else
+                    {
+                        msgError("Usuario o Contraseña incorecta \n Pruebe nuvamente");
+                        txtPass.Text = "Contraseña";
+                        //txtpass.Clear();
+                        txtUser.Focus();
+                    }
+                }
+                else msgError("Porfavor ingresar una contraseña");
+            }
+            else msgError("Porfavor ingresar un nombre de usuario");
+        }
+        private void msgError(string msg)
+        {
+            lblMensajeError.Text = msg;
+            lblMensajeError.Visible = true;
         }
     }
 }

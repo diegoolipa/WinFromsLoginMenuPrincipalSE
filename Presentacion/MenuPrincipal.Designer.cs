@@ -1,4 +1,4 @@
-﻿namespace MenuPrincipal
+﻿namespace Presentacion
 {
     partial class MenuPrincipal
     {
@@ -347,7 +347,7 @@
             pictureBox1.TabIndex = 2;
             pictureBox1.TabStop = false;
             // 
-            // Form1
+            // MenuPrincipal
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -355,8 +355,9 @@
             Controls.Add(panel1);
             Controls.Add(panel2);
             FormBorderStyle = FormBorderStyle.None;
-            Name = "Form1";
+            Name = "MenuPrincipal";
             Text = "Form1";
+            Load += MenuPrincipal_Load;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox9).EndInit();

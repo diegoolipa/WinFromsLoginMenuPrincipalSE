@@ -1,4 +1,4 @@
-namespace MenuPrincipal
+namespace Presentacion
 {
     public partial class MenuPrincipal : Form
     {
@@ -13,6 +13,11 @@ namespace MenuPrincipal
         }
 
         private void button3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void MenuPrincipal_Load(object sender, EventArgs e)
         {
 
         }
