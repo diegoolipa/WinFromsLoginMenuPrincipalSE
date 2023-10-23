@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MenuPrincipal));
             panel1 = new Panel();
+            lblMaterno = new Label();
             pictureBox9 = new PictureBox();
             btnSalir = new Button();
             pictureBox8 = new PictureBox();
@@ -52,7 +53,7 @@
             label1 = new Label();
             pictureBox2 = new PictureBox();
             pictureBox1 = new PictureBox();
-            lblMaterno = new Label();
+            panelContenedor = new Panel();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox9).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox8).BeginInit();
@@ -94,6 +95,17 @@
             panel1.Size = new Size(270, 720);
             panel1.TabIndex = 0;
             // 
+            // lblMaterno
+            // 
+            lblMaterno.AutoSize = true;
+            lblMaterno.Font = new Font("Century Gothic", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
+            lblMaterno.ForeColor = Color.White;
+            lblMaterno.Location = new Point(127, 75);
+            lblMaterno.Name = "lblMaterno";
+            lblMaterno.Size = new Size(69, 20);
+            lblMaterno.TabIndex = 22;
+            lblMaterno.Text = "Choque";
+            // 
             // pictureBox9
             // 
             pictureBox9.Image = (Image)resources.GetObject("pictureBox9.Image");
@@ -117,6 +129,7 @@
             btnSalir.TabIndex = 20;
             btnSalir.Text = "SALIR";
             btnSalir.UseVisualStyleBackColor = false;
+            btnSalir.Click += btnSalir_Click;
             // 
             // pictureBox8
             // 
@@ -141,6 +154,7 @@
             btnCalculadora.TabIndex = 18;
             btnCalculadora.Text = "CALCULADORA";
             btnCalculadora.UseVisualStyleBackColor = false;
+            btnCalculadora.Click += btnCalculadora_Click;
             // 
             // pictureBox7
             // 
@@ -165,6 +179,7 @@
             bntPersonas.TabIndex = 16;
             bntPersonas.Text = "PERSONAS";
             bntPersonas.UseVisualStyleBackColor = false;
+            bntPersonas.Click += bntPersonas_Click;
             // 
             // pictureBox6
             // 
@@ -238,6 +253,7 @@
             btnProductos.TabIndex = 10;
             btnProductos.Text = "PRODUCTOS";
             btnProductos.UseVisualStyleBackColor = false;
+            btnProductos.Click += btnProductos_Click;
             // 
             // lblRol
             // 
@@ -350,22 +366,20 @@
             pictureBox1.TabIndex = 2;
             pictureBox1.TabStop = false;
             // 
-            // lblMaterno
+            // panelContenedor
             // 
-            lblMaterno.AutoSize = true;
-            lblMaterno.Font = new Font("Century Gothic", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
-            lblMaterno.ForeColor = Color.White;
-            lblMaterno.Location = new Point(127, 75);
-            lblMaterno.Name = "lblMaterno";
-            lblMaterno.Size = new Size(69, 20);
-            lblMaterno.TabIndex = 22;
-            lblMaterno.Text = "Choque";
+            panelContenedor.Location = new Point(266, 40);
+            panelContenedor.Name = "panelContenedor";
+            panelContenedor.Size = new Size(984, 720);
+            panelContenedor.TabIndex = 2;
+            panelContenedor.Paint += panelContenedor_Paint;
             // 
             // MenuPrincipal
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1250, 760);
+            Controls.Add(panelContenedor);
             Controls.Add(panel1);
             Controls.Add(panel2);
             FormBorderStyle = FormBorderStyle.None;
@@ -414,5 +428,6 @@
         private PictureBox pictureBox8;
         private Button btnCalculadora;
         private Label lblMaterno;
+        private Panel panelContenedor;
     }
 }

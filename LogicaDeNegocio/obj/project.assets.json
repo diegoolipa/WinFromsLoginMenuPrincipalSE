@@ -151,6 +151,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
+          "Comun": "1.0.0",
           "System.Data.SqlClient": "4.8.5"
         },
         "compile": {
@@ -158,6 +159,16 @@
         },
         "runtime": {
           "bin/placeholder/AccesoDato.dll": {}
+        }
+      },
+      "Comun/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/Comun.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Comun.dll": {}
         }
       }
     }
@@ -480,11 +491,17 @@
       "type": "project",
       "path": "../AccesoDato/AccesoDato.csproj",
       "msbuildProject": "../AccesoDato/AccesoDato.csproj"
+    },
+    "Comun/1.0.0": {
+      "type": "project",
+      "path": "../Comun/Comun.csproj",
+      "msbuildProject": "../Comun/Comun.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
-      "AccesoDato >= 1.0.0"
+      "AccesoDato >= 1.0.0",
+      "Comun >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -522,6 +539,9 @@
           "projectReferences": {
             "D:\\proyecto_cs_git\\WinFromsLoginMenuPrincipalSE\\AccesoDato\\AccesoDato.csproj": {
               "projectPath": "D:\\proyecto_cs_git\\WinFromsLoginMenuPrincipalSE\\AccesoDato\\AccesoDato.csproj"
+            },
+            "D:\\proyecto_cs_git\\WinFromsLoginMenuPrincipalSE\\Comun\\Comun.csproj": {
+              "projectPath": "D:\\proyecto_cs_git\\WinFromsLoginMenuPrincipalSE\\Comun\\Comun.csproj"
             }
           }
         }

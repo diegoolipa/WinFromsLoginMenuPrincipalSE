@@ -8,6 +8,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\AccesoDato\AccesoDato.csproj" />
+    <ProjectReference Include="..\Comun\Comun.csproj" />
   </ItemGroup>
 
 </Project>

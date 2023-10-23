@@ -69,6 +69,7 @@ namespace Presentacion
             {
                 txtPass.Text = "";
                 txtPass.ForeColor = Color.Black;
+                txtPass.UseSystemPasswordChar = true;
             }
         }
 
@@ -78,6 +79,7 @@ namespace Presentacion
             {
                 txtPass.Text = "Contraseña";
                 txtPass.ForeColor = Color.Black;
+                txtPass.UseSystemPasswordChar = false;
             }
         }
 
@@ -94,7 +96,7 @@ namespace Presentacion
                         MenuPrincipal menuPrincipal = new MenuPrincipal();
                         //-----:MessageBox.Show("Bienbenido" + UsuarioLoginCache.Nombre);
                         menuPrincipal.Show();
-                        //menuPrincipal.FormClosed += Logout;
+                        menuPrincipal.FormClosed += Logout;
                         this.Hide();
                     }
                     else
@@ -114,5 +116,20 @@ namespace Presentacion
             lblMensajeError.Text = msg;
             lblMensajeError.Visible = true;
         }
+
+        private void Logout(object sender, FormClosedEventArgs e)
+        {
+            txtPass.Text = "Contraseña";
+            txtPass.UseSystemPasswordChar = false;
+            txtUser.Text = "Usuario";
+            //txtpass.Clear();
+            //txtuser.Clear();
+            iconoError.Visible = false;
+            lblMensajeError.Visible = false;
+            this.Show();
+            //txtuser.Focus();
+        }
+
+
     }
 }

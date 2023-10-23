@@ -5,6 +5,7 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Comun.Cache;
 
 namespace AccesoDato
 {
@@ -37,6 +38,19 @@ namespace AccesoDato
                     SqlDataReader reader = command.ExecuteReader();
                     if (reader.HasRows)
                     {
+                        //Obtener Datos inicio INICIO
+                        while (reader.Read())
+                        {
+                            UsuarioLoginCache.IdUser = reader.GetInt32(0);
+                            UsuarioLoginCache.Nombre = reader.GetString(1);
+                            UsuarioLoginCache.ApellidoPaterno = reader.GetString(2);
+                            UsuarioLoginCache.ApellidoMaterno = reader.GetString(3);
+                            UsuarioLoginCache.Correo = reader.GetString(4);
+                            UsuarioLoginCache.NumDocumento = reader.GetString(5);
+                            UsuarioLoginCache.Rol = reader.GetString(6);
+                        }
+                        //Obtener Datos inicio FIN
+
                         return true;
                     }
                     else 

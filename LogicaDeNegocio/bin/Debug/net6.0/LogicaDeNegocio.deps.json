@@ -8,7 +8,8 @@
     ".NETCoreApp,Version=v6.0": {
       "LogicaDeNegocio/1.0.0": {
         "dependencies": {
-          "AccesoDato": "1.0.0"
+          "AccesoDato": "1.0.0",
+          "Comun": "1.0.0"
         },
         "runtime": {
           "LogicaDeNegocio.dll": {}
@@ -91,10 +92,16 @@
       "System.Security.Principal.Windows/4.7.0": {},
       "AccesoDato/1.0.0": {
         "dependencies": {
+          "Comun": "1.0.0",
           "System.Data.SqlClient": "4.8.5"
         },
         "runtime": {
           "AccesoDato.dll": {}
+        }
+      },
+      "Comun/1.0.0": {
+        "runtime": {
+          "Comun.dll": {}
         }
       }
     }
@@ -169,6 +176,11 @@
       "hashPath": "system.security.principal.windows.4.7.0.nupkg.sha512"
     },
     "AccesoDato/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Comun/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

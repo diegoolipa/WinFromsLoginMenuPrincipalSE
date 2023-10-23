@@ -28,3 +28,5 @@ D:\proyecto_cs_git\WinFromsLoginMenuPrincipalSE\LogicaDeNegocio\obj\Debug\net6.0
 D:\proyecto_cs_git\WinFromsLoginMenuPrincipalSE\LogicaDeNegocio\obj\Debug\net6.0\refint\LogicaDeNegocio.dll
 D:\proyecto_cs_git\WinFromsLoginMenuPrincipalSE\LogicaDeNegocio\obj\Debug\net6.0\LogicaDeNegocio.pdb
 D:\proyecto_cs_git\WinFromsLoginMenuPrincipalSE\LogicaDeNegocio\obj\Debug\net6.0\ref\LogicaDeNegocio.dll
+D:\proyecto_cs_git\WinFromsLoginMenuPrincipalSE\LogicaDeNegocio\bin\Debug\net6.0\Comun.dll
+D:\proyecto_cs_git\WinFromsLoginMenuPrincipalSE\LogicaDeNegocio\bin\Debug\net6.0\Comun.pdb

@@ -151,6 +151,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
+          "Comun": "1.0.0",
           "System.Data.SqlClient": "4.8.5"
         },
         "compile": {
@@ -160,11 +161,22 @@
           "bin/placeholder/AccesoDato.dll": {}
         }
       },
+      "Comun/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/Comun.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Comun.dll": {}
+        }
+      },
       "LogicaDeNegocio/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
-          "AccesoDato": "1.0.0"
+          "AccesoDato": "1.0.0",
+          "Comun": "1.0.0"
         },
         "compile": {
           "bin/placeholder/LogicaDeNegocio.dll": {}
@@ -494,6 +506,11 @@
       "path": "../AccesoDato/AccesoDato.csproj",
       "msbuildProject": "../AccesoDato/AccesoDato.csproj"
     },
+    "Comun/1.0.0": {
+      "type": "project",
+      "path": "../Comun/Comun.csproj",
+      "msbuildProject": "../Comun/Comun.csproj"
+    },
     "LogicaDeNegocio/1.0.0": {
       "type": "project",
       "path": "../LogicaDeNegocio/LogicaDeNegocio.csproj",
@@ -502,6 +519,7 @@
   },
   "projectFileDependencyGroups": {
     "net6.0-windows7.0": [
+      "Comun >= 1.0.0",
       "LogicaDeNegocio >= 1.0.0"
     ]
   },
@@ -538,6 +556,9 @@
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
           "projectReferences": {
+            "D:\\proyecto_cs_git\\WinFromsLoginMenuPrincipalSE\\Comun\\Comun.csproj": {
+              "projectPath": "D:\\proyecto_cs_git\\WinFromsLoginMenuPrincipalSE\\Comun\\Comun.csproj"
+            },
             "D:\\proyecto_cs_git\\WinFromsLoginMenuPrincipalSE\\LogicaDeNegocio\\LogicaDeNegocio.csproj": {
               "projectPath": "D:\\proyecto_cs_git\\WinFromsLoginMenuPrincipalSE\\LogicaDeNegocio\\LogicaDeNegocio.csproj"
             }

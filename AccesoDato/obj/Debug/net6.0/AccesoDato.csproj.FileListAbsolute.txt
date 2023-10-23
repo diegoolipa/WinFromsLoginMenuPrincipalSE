@@ -22,3 +22,6 @@ D:\proyecto_cs_git\WinFromsLoginMenuPrincipalSE\AccesoDato\obj\Debug\net6.0\Acce
 D:\proyecto_cs_git\WinFromsLoginMenuPrincipalSE\AccesoDato\obj\Debug\net6.0\refint\AccesoDato.dll
 D:\proyecto_cs_git\WinFromsLoginMenuPrincipalSE\AccesoDato\obj\Debug\net6.0\AccesoDato.pdb
 D:\proyecto_cs_git\WinFromsLoginMenuPrincipalSE\AccesoDato\obj\Debug\net6.0\ref\AccesoDato.dll
+D:\proyecto_cs_git\WinFromsLoginMenuPrincipalSE\AccesoDato\bin\Debug\net6.0\Comun.dll
+D:\proyecto_cs_git\WinFromsLoginMenuPrincipalSE\AccesoDato\bin\Debug\net6.0\Comun.pdb
+D:\proyecto_cs_git\WinFromsLoginMenuPrincipalSE\AccesoDato\obj\Debug\net6.0\AccesoDato.csproj.CopyComplete

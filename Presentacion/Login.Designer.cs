@@ -39,14 +39,14 @@
             btnLogin = new Button();
             label2 = new Label();
             label3 = new Label();
-            pictureBox3 = new PictureBox();
+            iconoError = new PictureBox();
             lblMensajeError = new Label();
             linkLabel1 = new LinkLabel();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             ((System.ComponentModel.ISupportInitialize)btnCerrar).BeginInit();
             ((System.ComponentModel.ISupportInitialize)btnMinimizar).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)iconoError).BeginInit();
             SuspendLayout();
             // 
             // panel1
@@ -156,15 +156,15 @@
             label3.TabIndex = 8;
             label3.Text = "Contraseña";
             // 
-            // pictureBox3
+            // iconoError
             // 
-            pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
-            pictureBox3.Location = new Point(324, 183);
-            pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(27, 25);
-            pictureBox3.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox3.TabIndex = 9;
-            pictureBox3.TabStop = false;
+            iconoError.Image = (Image)resources.GetObject("iconoError.Image");
+            iconoError.Location = new Point(324, 183);
+            iconoError.Name = "iconoError";
+            iconoError.Size = new Size(27, 25);
+            iconoError.SizeMode = PictureBoxSizeMode.Zoom;
+            iconoError.TabIndex = 9;
+            iconoError.TabStop = false;
             // 
             // lblMensajeError
             // 
@@ -196,7 +196,7 @@
             ClientSize = new Size(764, 291);
             Controls.Add(linkLabel1);
             Controls.Add(lblMensajeError);
-            Controls.Add(pictureBox3);
+            Controls.Add(iconoError);
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(btnLogin);
@@ -217,7 +217,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             ((System.ComponentModel.ISupportInitialize)btnCerrar).EndInit();
             ((System.ComponentModel.ISupportInitialize)btnMinimizar).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
+            ((System.ComponentModel.ISupportInitialize)iconoError).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -233,7 +233,7 @@
         private Button btnLogin;
         private Label label2;
         private Label label3;
-        private PictureBox pictureBox3;
+        private PictureBox iconoError;
         private Label lblMensajeError;
         private LinkLabel linkLabel1;
         private PictureBox pictureBox4;
