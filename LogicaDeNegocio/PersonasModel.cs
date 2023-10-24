@@ -18,5 +18,22 @@ namespace LogicaDeNegocio
             tabla = personaDao.Mostrar();
             return tabla;
         }
+
+        public Dictionary<string, object> InsertarPerosna(Dictionary<string, object> datos)
+        {
+            Dictionary<string, object> resultado = personaDao.Insertar(datos);
+            return resultado;
+        }
+
+        public void EliminarPersona(int personaID)
+        {
+            personaDao.Eliminar(personaID);
+        }
+
+        
+        public void EditarPersona(Dictionary<string, object> datos)
+        {
+            personaDao.Editar(datos);
+        }
     }
 }
